@@ -1,7 +1,7 @@
 .nav_bar {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
   grid-gap: 10px; }
 
 .slide_show {
@@ -10,8 +10,8 @@
   grid-template-rows: auto;
   grid-gap: 10px;
   background-color: black;
-  width: 970px;
-  height: 300px; }
+  width: 390px;
+  height: 350px; }
 
 .who_am_i {
   display: grid;
@@ -21,7 +21,7 @@
 
 .who_am_i_images {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-gap: 20px; }
 
@@ -46,8 +46,8 @@
 
 .team_sub_grid {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
   grid-gap: 10px; }
 
 .count_chart {
@@ -66,7 +66,8 @@
 
 header img {
   width: 100px;
-  height: 50px; }
+  height: 50px;
+  margin-left: 40%; }
 
 nav {
   text-align: center; }
@@ -78,6 +79,9 @@ nav li {
     color: black; }
   nav li a:hover {
     color: red; }
+
+input {
+  margin-left: 30%; }
 
 button img {
   width: 12px;
@@ -91,11 +95,35 @@ button img {
 .icon_section {
   color: white; }
   .icon_section img {
-    width: 400px;
-    height: 400px;
+    width: 100px;
+    height: 100px;
     text-align: center; }
   .icon_section div {
     margin-left: 10%;
     margin-right: 10%; }
+
+@media screen and (min-width: 768px) {
+  .slide_show {
+    width: 760px;
+    height: 350px; }
+
+  .who_am_i_images {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 20px; }
+
+  .team_sub_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px; }
+
+  .count_chart {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: black; } }
 
 /*# sourceMappingURL=style.css.map */
