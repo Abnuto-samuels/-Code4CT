@@ -1,0 +1,124 @@
+// styling mobile
+// grids
+// header
+.nav_bar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+.slide_show {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  background-color: black;
+  width: 970px;
+  height: 300px;
+}
+// body section
+// who am i section
+.who_am_i {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+// images for who am i
+.who_am_i_images {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 20px;
+}
+// icon_section
+.icon_section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+}
+// profile section
+.profile {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+}
+// team section
+.team {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+}
+.team_sub_grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+// count_chart
+.count_chart {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+}
+// sponsors section
+.sponsors {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: 10px;
+  background-color: black;
+}
+// styling header
+header {
+  img {
+    width: 100px;
+    height: 50px;
+  }
+}
+// styling nav
+nav {
+  text-align: center;
+}
+nav li {
+  display: inline-block;
+
+   a {
+     text-decoration: none;
+     color: black;
+   }
+   a:hover {
+     color: red;
+   }
+}
+button{
+  img {
+    width: 12px;
+    height: 12px;
+  }
+}
+// styling my slide show section
+.slide_show {
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+// styling my icon_section
+.icon_section {
+  color: white;
+  img {
+    width: 400px;
+    height: 400px;
+    text-align: center;
+  }
+  div {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
