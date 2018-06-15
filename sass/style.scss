@@ -23,6 +23,7 @@
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-gap: 10px;
+  padding-top: 10px;
 }
 // images for who am i
 .who_am_i_images {
@@ -35,12 +36,25 @@
 .icon_section {
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   grid-gap: 10px;
   background-color: black;
 }
 // profile section
 .profile {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+}
+// profile_images section
+.profile_images {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+.profile_images1 {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
@@ -75,6 +89,19 @@
   grid-gap: 10px;
   background-color: black;
 }
+// sub footer
+.sub_footer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-gap: 10px;
+}
+footer {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
 // styling header
 header {
   img {
@@ -89,6 +116,7 @@ nav {
 }
 nav li {
   display: inline-block;
+  padding: 10px;
 
    a {
      text-decoration: none;
@@ -112,19 +140,74 @@ button{
   color: white;
   text-align: center;
   padding-top: 50px;
+  animation-name: slideshow;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  background-size: contain;
+  background-repeat: no-repeat;
+   p {
+     margin: 2%;
+   }
+   div {
+     background-color: rgba(0, 0, 0, 0.5);
+   }
+   #read_more {
+     background-color: red;
+     border-color: red;
+     border-radius: 5px;
+     padding: 10px;
+     color: white;
+   }
+   #about_us {
+     background-color: black;
+     border-color: white;
+     border-radius: 5px;
+     padding: 10px;
+     color: white;
+
+   }
+}
+@keyframes slideshow {
+  0% {background-image: url("../images/slider-image1.jpg");
+  background-position: center;
+  background-size: cover;}
+  25% {background-image: url("../images/slider-image1.jpg");
+  background-position: center;
+  background-size: cover;}
+  50% {background-image: url("../images/code4ct_homeslider2.jpg");
+  background-position: center;
+  background-size: cover;}
+  75% {background-image: url("../images/code4ct_homeslider2.jpg");
+  background-position: center;
+  background-size: cover;}
+  100% {background-image: url("../images/code4ct_homeslider3.jpg");
+  background-position: center;
+  background-size: cover;}
+}
+// who_am_i_images section
+.who_am_i_images {
+  img {
+    width: 100%;
+    height: 70%;
+  }
 }
 // styling my icon_section
 .icon_section {
   color: white;
   img {
-    width: 100px;
-    height: 100px;
+    width: 30%;
+    height: 30%;
     text-align: center;
+    padding-top: 5px;
   }
   div {
     margin-left: 10%;
     margin-right: 10%;
   }
+}
+footer {
+  background-color: red;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .slide_show {
@@ -151,5 +234,109 @@ button{
     grid-template-rows: auto auto auto auto;
     grid-gap: 10px;
     background-color: black;
+  }
+}
+// styling my desktop
+@media screen and (min-width: 1024px) {
+  .slide_show {
+    width: 1024px;
+    height: 350px;
+  }
+  .sub_footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .who_am_i_images {
+    img {
+      width: 60%;
+      height: 70%;
+    }
+  }
+  .profile_images {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .profile_images1 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+  }
+}
+// styling large desktop
+@media screen and (min-width: 1200px) {
+  .nav_bar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .slide_show {
+    width: 1470px;
+    height: 350px;
+  }
+  .who_am_i {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  .icon_section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    background-color: black;
+  }
+  // profile section
+  .profile {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+  }
+  // team section
+  .team {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+  }
+  .team_sub_grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+  }
+  // count_chart
+  .count_chart {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    background-color: black;
+  }
+  // sponsors section
+  .sponsors {
+    display: grid;
+    grid-template-columns: auto  auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    background-color: black;
+  }
+  .count_chart {
+    width: 90em;
+    height: 10em;
+
+  }
+  .sub_footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
   }
 }
