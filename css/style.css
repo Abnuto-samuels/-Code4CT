@@ -9,7 +9,7 @@
   grid-template-rows: auto;
   grid-gap: 10px;
   background-color: black;
-  width: 390px;
+  width: 340px;
   height: 350px; }
 
 .who_am_i {
@@ -93,6 +93,11 @@ footer {
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-gap: 10px; }
+
+.awesome_profile {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto; }
 
 header img {
   width: 100px;
@@ -238,6 +243,27 @@ footer {
   .about a:hover {
     color: #e38f84; }
 
+.scroll_button {
+  text-align: right;
+  position: sticky;
+  bottom: 3%;
+  padding-bottom: 2%; }
+  .scroll_button a {
+    background-color: grey;
+    color: white;
+    padding: 7px;
+    border-radius: 2px;
+    text-decoration: none;
+    animation-name: scroll;
+    animation-iteration-count: infinite;
+    animation-duration: 2s; }
+@keyframes scroll {
+  0% {
+    opacity: 0.5; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.5; } }
 @media screen and (min-width: 768px) {
   label {
     display: none; }
@@ -298,7 +324,12 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    grid-gap: 10px; } }
+    grid-gap: 10px; }
+
+  .awesome_profile {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto; } }
 @media screen and (min-width: 1200px) {
   .welcome_section {
     display: grid;
