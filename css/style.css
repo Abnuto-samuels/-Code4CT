@@ -1,8 +1,7 @@
 .nav_bar {
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto;
-  grid-gap: 10px; }
+  grid-template-columns: auto auto;
+  grid-template-rows: auto; }
 
 .slide_show {
   display: grid;
@@ -89,22 +88,52 @@ footer {
   grid-template-rows: auto;
   grid-gap: 10px; }
 
+.welcome_section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px; }
+
 header img {
   width: 100px;
   height: 50px;
   margin-left: 40%; }
 
-nav {
+.container {
   text-align: center; }
 
-nav li {
-  display: inline-block;
-  padding: 10px; }
-  nav li a {
-    text-decoration: none;
-    color: black; }
-  nav li a:hover {
-    color: red; }
+.nav_bar {
+  text-align: right; }
+  .nav_bar img {
+    float: left; }
+
+.menu {
+  margin: 0 30px 0 0;
+  display: none; }
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  margin: 0 10px;
+  line-height: 70px;
+  display: block;
+  text-align: center;
+  clear: right; }
+.menu a:hover {
+  color: #e38f84; }
+
+label {
+  margin: 0 40px 0 0;
+  display: block;
+  cursor: pointer;
+  width: 26px;
+  float: right; }
+
+#toggle {
+  display: none; }
+
+#toggle:checked + .menu {
+  display: block; }
 
 input {
   margin-left: 30%; }
@@ -127,17 +156,21 @@ button img {
   .slide_show div {
     background-color: rgba(0, 0, 0, 0.5); }
   .slide_show #read_more {
-    background-color: red;
-    border-color: red;
+    background-color: #e38f84;
+    border-color: #e38f84;
     border-radius: 5px;
     padding: 10px;
     color: white; }
+  .slide_show #read_more:hover {
+    padding-right: 50px; }
   .slide_show #about_us {
     background-color: black;
     border-color: white;
     border-radius: 5px;
     padding: 10px;
     color: white; }
+  .slide_show #about_us:hover {
+    padding-right: 50px; }
 
 @keyframes slideshow {
   0% {
@@ -176,10 +209,42 @@ button img {
     margin-right: 10%; }
 
 footer {
-  background-color: red;
+  background-color: #e38f84;
   text-align: center; }
 
+.wrapper {
+  overflow: hidden; }
+
+.sliding-background {
+  background: url("../images/carousalremake.png") repeat-x;
+  height: 150px;
+  width: 5076px;
+  animation: move 30s linear infinite; }
+
+@keyframes move {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-3172px, 0, 0); } }
+.about {
+  background-color: grey;
+  height: 300px;
+  padding-top: 100px; }
+  .about a {
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    text-align: center; }
+  .about a:hover {
+    color: #e38f84; }
+
 @media screen and (min-width: 768px) {
+  label {
+    display: none; }
+
+  .menu {
+    display: inline-flex; }
+
   .slide_show {
     width: 760px;
     height: 350px; }
@@ -227,8 +292,20 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    grid-gap: 10px; }
+
+  .welcome_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
     grid-gap: 10px; } }
 @media screen and (min-width: 1200px) {
+  .welcome_section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px; }
+
   .nav_bar {
     display: grid;
     grid-template-columns: auto auto auto;
