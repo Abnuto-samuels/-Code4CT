@@ -99,6 +99,12 @@ footer {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto; }
 
+.form {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-gap: 10px; }
+
 header img {
   width: 100px;
   height: 50px;
@@ -329,7 +335,13 @@ footer {
   .awesome_profile {
     display: grid;
     grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto auto; } }
+    grid-template-rows: auto auto auto; }
+
+  .form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px; } }
 @media screen and (min-width: 1200px) {
   .welcome_section {
     display: grid;
