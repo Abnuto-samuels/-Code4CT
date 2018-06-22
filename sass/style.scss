@@ -314,6 +314,24 @@ footer {
     100% {opacity: 0.5;}
   }
 }
+// sub footer
+.sub_footer {
+  ul {
+    display: inline-block;
+  }
+}
+// subscribe section
+.subscribe {
+  input {
+    margin-right: 5%;
+  }
+  button {
+    background-color: #e38f84;
+    border-color: #e38f84;
+    border-radius: 5px;
+    color: white;
+  }
+}
 @media screen and (min-width: 768px) {
   label {
     display: none;
@@ -382,6 +400,12 @@ footer {
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     grid-gap: 10px;
+  }
+  .profile_image_size {
+   img {
+     height: 104%;
+     width: 85%;
+   }
   }
   .awesome_profile {
     display: grid;
