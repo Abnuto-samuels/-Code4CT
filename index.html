@@ -14,7 +14,7 @@
         <!-- nav section -->
         <section class="nav_bar">
           <div class="">
-            <img src="images/code4ct-logo-1.jpg" alt="code4ctlogo">
+            <a href="index.html"><img src="images/code4ct-logo-1.jpg" alt="code4ctlogo"></a>
           </div>
           <div class="">
             <label for="toggle">&#9776;</label>
@@ -25,6 +25,8 @@
                <a href="about.html">ABOUT</a>
                <a href="portfolio.html">PORTFOLIO</a>
                <a href="contact.html">CONTACT</a>
+               <input type="text" name="" value="" placeholder="Search">
+               <button type="button" name="button"><img src="images/search_icon.png" alt="search icon" width="50px" height="50px"></button>
             </div>
           </div>
         </section>
@@ -176,24 +178,22 @@
 
       </section>
       <!-- count bar section -->
-      <section class="count_chart" >
-        <div class="">
-          <img src="images/code4ct-logo-1.jpg" alt="code4ct logo">
-
-        </div>
-        <div class="">
-          <img src="images/code4ct-logo-1.jpg" alt="code4ct logo">
-
-        </div>
-        <div class="">
-          <img src="images/code4ct-logo-1.jpg" alt="code4ct logo">
-
-        </div>
-        <!-- <div class="">
-          <img src="images/code4ct-logo-1.jpg" alt="code4ct logo">
-        </div> -->
-
-      </section>
+      <section id="container3">
+       <table id="countUp">
+         <tr>
+           <td><div class="counter" data-count="3000">0</div></td>
+           <td><div class="counter" data-count="780">0</div></td>
+           <td><div class="counter" data-count="3120">0</div></td>
+           <td><div class="counter" data-count="8765">0</div></td>
+         </tr>
+         <tr>
+           <td><p class="counterTerm">Cup of coffee</p></td>
+           <td><p class="counterTerm">Number of girls</p></td>
+           <td><p class="counterTerm">Projects completed</p></td>
+           <td><p class="counterTerm">Hours of coding</p></td>
+         </tr>
+       </table>
+   </section>
       <!-- the subscribe section -->
       <section class="subscribe">
         <h1>SUBSCRIBE TO US</h1>
@@ -222,11 +222,11 @@
         <div class="">
           <h1>Company</h1>
           <ul>
-            <li>About us</li>
-            <li>Contact us</li>
-            <li>Blog</li>
-            <li>Testimonials</li>
-            <li>Affiliate program</li>
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
           </ul>
         </div>
         <div class="">
@@ -252,6 +252,11 @@
 
 
     </div>
+    <!-- pull in jquery library -->
+     <script src="js/jquery-3.3.1.min.js"></script>
 
+   <script src="js/main.js">
+
+   </script>
   </body>
 </html>

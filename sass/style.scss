@@ -125,6 +125,16 @@ header {
     height: 50px;
     margin-left: 40%;
   }
+  input {
+    height: 5%;
+    display: none;
+    border-radius: 5px;
+  }
+  button {
+    height: 10%;
+    display: none;
+    border-radius: 5px;
+  }
 }
 // styling my container
 .container {
@@ -170,7 +180,7 @@ label {
  }
 
 input {
-   margin-left: 30%;
+   margin-left: 20%;
 }
 button{
   img {
@@ -213,6 +223,9 @@ button{
    }
    #about_us:hover {
      padding-right: 50px;
+   }
+   a {
+     text-decoration: none;
    }
 }
 @keyframes slideshow {
@@ -319,6 +332,13 @@ footer {
   ul {
     display: inline-block;
   }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover {
+    color: #e38f84;
+  }
 }
 // subscribe section
 .subscribe {
@@ -332,7 +352,26 @@ footer {
     color: white;
   }
 }
+// styling my count up
+#countUp{
+    width: 100%;
+    height:auto;
+    background-color: black;
+    color: white;
+}
+.counter {
+    border-top: 2px solid #e38f84;
+    width: 20%;
+}
 @media screen and (min-width: 768px) {
+  header {
+    input {
+      display: inline;
+    }
+    button {
+      display: inline;
+    }
+  }
   label {
     display: none;
   }
@@ -363,6 +402,11 @@ footer {
     grid-template-rows: auto auto auto auto;
     grid-gap: 10px;
     background-color: black;
+  }
+  .subscribe {
+    button {
+      margin-right: 23%;
+    }
   }
 }
 // styling my desktop
@@ -418,6 +462,13 @@ footer {
     grid-template-rows: auto;
     grid-gap: 10px;
   }
+  #countUp {
+    text-align: left;
+  }
+  .counter {
+      width: 4%;
+  }
+
 }
 // styling large desktop
 @media screen and (min-width: 1200px) {
