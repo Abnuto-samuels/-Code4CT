@@ -105,6 +105,12 @@ footer {
   grid-template-rows: auto auto;
   grid-gap: 10px; }
 
+.course {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
+  grid-gap: 10px; }
+
 header img {
   width: 100px;
   height: 50px;
@@ -340,6 +346,12 @@ footer {
     grid-template-rows: auto auto auto auto;
     grid-gap: 10px;
     background-color: black; }
+
+  .course {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-gap: 10px; }
 
   .subscribe button {
     margin-right: 23%; } }
