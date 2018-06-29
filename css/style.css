@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; }
+
 .nav_bar {
   display: grid;
   grid-template-columns: auto auto;
@@ -111,6 +114,15 @@ footer {
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-gap: 10px; }
 
+.count_up2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  padding-bottom: 100px;
+  background-color: black;
+  color: white; }
+
 header img {
   width: 100px;
   height: 50px;
@@ -180,13 +192,16 @@ button img {
     margin: 2%; }
   .slide_show div {
     background-color: rgba(0, 0, 0, 0.5); }
-  .slide_show #read_more {
+  .slide_show #coding {
     background-color: #e38f84;
     border-color: #e38f84;
     border-radius: 5px;
     padding: 10px;
     color: white; }
-  .slide_show #read_more:hover {
+    .slide_show #coding a {
+      text-decoration: none;
+      color: white; }
+  .slide_show #coding:hover {
     padding-right: 50px; }
   .slide_show #about_us {
     background-color: black;
@@ -223,6 +238,26 @@ button img {
 .who_am_i_images img {
   width: 100%;
   height: 70%; }
+
+.read_more {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 5px;
+  color: white; }
+  .read_more a {
+    text-decoration: none;
+    color: black; }
+
+.service {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 5px;
+  color: white; }
+  .service a {
+    text-decoration: none;
+    color: black; }
 
 .icon_section {
   color: white; }
@@ -311,6 +346,128 @@ footer {
 .counter {
   border-top: 2px solid #e38f84;
   width: 20%; }
+
+.awesome_profile div {
+  height: 30vh; }
+
+.portfolio_img1 {
+  background-image: url(../images/portfolio1.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img2 {
+  background-image: url(../images/portfolio2.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img3 {
+  background-image: url(../images/portfolio3.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img4 {
+  background-image: url(../images/portfolio4.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img5 {
+  background-image: url(../images/portfolio5.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img6 {
+  background-image: url(../images/portfolio6.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img7 {
+  background-image: url(../images/portfolio7.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img8 {
+  background-image: url(../images/portfolio8.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img9 {
+  background-image: url(../images/portfolio9.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img10 {
+  background-image: url(../images/portfolio10.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img11 {
+  background-image: url(../images/portfolio11.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.portfolio_img12 {
+  background-image: url(../images/portfolio12.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  top: 0%;
+  left: 0;
+  background-color: black; }
+
+.lightbox img {
+  max-width: 50%;
+  max-height: 50%;
+  margin-top: 2%; }
+
+.lightbox:target {
+  outline: none;
+  display: block; }
+
+form table tr td {
+  display: block; }
+
+.send {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#cart {
+  background-color: black;
+  color: black; }
+
+.basket {
+  text-align: left;
+  position: sticky;
+  bottom: 3%;
+  padding-bottom: 2%;
+  width: 150px;
+  animation-name: scroll;
+  animation-iteration-count: infinite;
+  animation-duration: 2s; }
+
+.course div {
+  padding-top: 50px; }
 
 @media screen and (min-width: 768px) {
   header input {
@@ -407,7 +564,19 @@ footer {
     text-align: left; }
 
   .counter {
-    width: 4%; } }
+    width: 4%; }
+
+  form table tr td {
+    display: inline-block; }
+
+  .count_up2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-bottom: 100px;
+    background-color: black;
+    color: white; } }
 @media screen and (min-width: 1200px) {
   .welcome_section {
     display: grid;

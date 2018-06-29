@@ -1,3 +1,7 @@
+// styling my smooth scroll
+html {
+  scroll-behavior: smooth;
+}
 // styling mobile
 // grids
 // header
@@ -124,6 +128,15 @@ footer {
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto;
   grid-gap: 10px;
 }
+.count_up2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 10px;
+  padding-bottom: 100px;
+  background-color: black;
+  color: white;
+}
 // styling header
 header {
   img {
@@ -195,6 +208,7 @@ button{
   }
 }
 // styling my slide show section
+// my background images
 .slide_show {
   color: white;
   text-align: center;
@@ -210,14 +224,19 @@ button{
    div {
      background-color: rgba(0, 0, 0, 0.5);
    }
-   #read_more {
+   // styling my button on slide
+   #coding {
      background-color: #e38f84;
      border-color: #e38f84;
      border-radius: 5px;
      padding: 10px;
      color: white;
+     a {
+       text-decoration: none;
+       color: white;
+     }
    }
-   #read_more:hover {
+   #coding:hover {
      padding-right: 50px;
    }
    #about_us {
@@ -256,6 +275,30 @@ button{
   img {
     width: 100%;
     height: 70%;
+  }
+}
+// styling read more button
+.read_more {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+// styling our service button
+.service {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  a {
+    text-decoration: none;
+    color: black;
   }
 }
 // styling my icon_section
@@ -312,6 +355,7 @@ footer {
     color: #e38f84;
   }
 }
+// styling back to top button
 .scroll_button {
   text-align: right;
   position: sticky;
@@ -369,6 +413,151 @@ footer {
     border-top: 2px solid #e38f84;
     width: 20%;
 }
+// styling my light box
+.awesome_profile {
+  div {
+    height: 30vh;
+  }
+}
+.portfolio_img1 {
+  background-image: url(../images/portfolio1.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img2 {
+  background-image: url(../images/portfolio2.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img3 {
+  background-image: url(../images/portfolio3.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img4 {
+  background-image: url(../images/portfolio4.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img5 {
+  background-image: url(../images/portfolio5.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img6 {
+  background-image: url(../images/portfolio6.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img7 {
+  background-image: url(../images/portfolio7.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img8 {
+  background-image: url(../images/portfolio8.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img9 {
+  background-image: url(../images/portfolio9.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img10 {
+  background-image: url(../images/portfolio10.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img11 {
+  background-image: url(../images/portfolio11.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.portfolio_img12 {
+  background-image: url(../images/portfolio12.JPG);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.lightbox {
+    // lightbox on HTML set to  hidden
+    display: none;
+    position: fixed;
+    z-index: 999;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    top: 0%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+    // Pad the lightbox image
+.lightbox img {
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 2%;
+}
+.lightbox:target {
+    // Remove outline
+    outline: none;
+
+    // display lightbox
+    display: block;
+}
+// styling my form on contact page
+form {
+  table {
+    tr {
+      td {
+        display: block;
+      }
+    }
+  }
+}
+// styling my form send button
+.send {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+// styling cart
+#cart {
+  background-color: black;
+  color: black;
+}
+// styling my basket
+.basket {
+  text-align: left;
+  position: sticky;
+  bottom: 3%;
+  padding-bottom: 2%;
+  width: 150px;
+  animation-name: scroll;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+.course {
+  div {
+    padding-top: 50px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   header {
     input {
@@ -480,8 +669,26 @@ footer {
   .counter {
       width: 4%;
   }
-
+  form {
+    table {
+      tr {
+        td {
+          display: inline-block;
+        }
+      }
+    }
+  }
+  .count_up2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-bottom: 100px;
+    background-color: black;
+    color: white;
+  }
 }
+
 // styling large desktop
 @media screen and (min-width: 1200px) {
   .welcome_section {

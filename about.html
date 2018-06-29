@@ -20,9 +20,9 @@
             <input type="checkbox" id="toggle">
             <div class="menu">
                <a href="index.html">HOME</a>
-               <a href="#">COURSES</a>
+               <a href="course.html">COURSES</a>
                <a href="about.html">ABOUT</a>
-               <a href="portfolio.html">PROFILE</a>
+               <a href="portfolio.html">PORTFOLIO</a>
                <a href="contact.html">CONTACT</a>
                <input type="text" name="" value="" placeholder="Search">
                <button type="button" name="button"><img src="images/search_icon.png" alt="search icon" width="50px" height="50px"></button>
@@ -40,7 +40,7 @@
           <h1>WELCOME TO CODE FOR CAPE TOWN</h1>
           <p>Code for Cape Town (Code4CT) is a programme that introduces young girls to basic web building skills and exposes them to opportunities in the Information and Communication Technologies (ICT) sector. Participants are trained in web development, design principles, as well as courses in professional development. Code4CT aims to inspire a generation of young girls who are well-prepared with a toolkit of technical and soft skills in order to achieve high impact in the workplace.</p>
           <p>These are skills that everyone should have. Even if you have no intention of becoming a professional coder, you will benefit from knowing how to think in this way in this increasingly computerized economy. A growing number of permanent job positions that use information technology to deliver a product or a service are becoming available in the local economy.  It is estimated that nearly 75000 such jobs will come online in South Africa within the next five years.  These digital jobs will mostly be driven by the ICT, Business Process Outsourcing (BPO), and the financial services industries.  These are the fastest growing sectors in our economy.  They are also the sectors that have the highest demand for entry-level digital skills.</p>
-          <button type="button" name="button">Our Services</button>
+          <button type="button" name="button" class="service"><a href="course.html">Our Services</a></button>
 
         </div>
         <div class="">
@@ -69,7 +69,8 @@
           </div>
           <div class="">
             <h1>Our Help</h1>
-            <p>Should members of your team wish to join our teaching team, you can donate their time to us.Our teaching teams typically consist of four people who run a particular module. Modules are typically 4-6 half day sessions. Lesson content is delivered in combination through our online learning portal and through explanations by the teaching team.Our classes typically consist of an opening energiser activity, a review of the previous week’s code challenge, an introduction to the lesson’s code challenge, a code walk-through in which a facilitator illustrates practically how to address the challenge and an overview of new theory. Thereafter, majority of the class is spent with facilitators assisting learners as they work.</p>
+            <p>Students and working professionals alike can pass their coding skills forward by joining one of our Teaching Teams as a Code Coach.
+            We implement a blended learning environment in our classes with lessons being delivered partially through online lessons with assistance from coaches and partially through front-of-class explanations. </p>
 
           </div>
           <div class="">
@@ -128,21 +129,23 @@
           </div>
       </section>
       <!-- count bar -->
-      <section id="container3">
-       <table id="countUp">
-         <tr>
-           <td><div class="counter" data-count="3000">0</div></td>
-           <td><div class="counter" data-count="780">0</div></td>
-           <td><div class="counter" data-count="3120">0</div></td>
-           <td><div class="counter" data-count="8765">0</div></td>
-         </tr>
-         <tr>
-           <td><p class="counterTerm">Cup of coffee</p></td>
-           <td><p class="counterTerm">Number of girls</p></td>
-           <td><p class="counterTerm">Projects completed</p></td>
-           <td><p class="counterTerm">Hours of coding</p></td>
-         </tr>
-       </table>
+      <section class="count_up2" >
+        <div class="">
+          <canvas id="canvas-1" width="200" height="200" data-perc="80"></canvas>
+          <p class="discription1">of our alumnae have gone on to further studies</p>
+        </div>
+        <div class="">
+          <canvas id="canvas-2" width="200" height="200" data-perc="74"></canvas>
+          <p class="discription2">of our alumnae have gone on to pursue STEM-related studies</p>
+        </div>
+        <div class="">
+          <canvas id="canvas-3" width="200" height="200" data-perc="56"></canvas>
+          <p class="discription3">of our alumnae are at university</p>
+        </div>
+        <div class="">
+          <canvas id="canvas-4" width="200" height="200" data-perc="24"></canvas>
+          <p class="discription4">of our alumnae are in IT skills development programmes</p>
+        </div>
    </section>
       <!-- subscribe section -->
       <section class="subscribe">
@@ -189,6 +192,11 @@
         </div>
 
       </section>
+      <!-- basket  -->
+      <div class="basket">
+        <div id="cart"></div>
+        <div id="total"></div>
+      </div>
       <!-- scroll button section -->
       <div class="scroll_button">
               <a href="#top">Top</a>
