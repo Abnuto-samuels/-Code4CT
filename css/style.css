@@ -4,7 +4,8 @@ html {
 .nav_bar {
   display: grid;
   grid-template-columns: auto auto;
-  grid-template-rows: auto; }
+  grid-template-rows: auto;
+  padding-bottom: 50px; }
 
 .slide_show {
   display: grid;
@@ -12,7 +13,7 @@ html {
   grid-template-rows: auto;
   grid-gap: 10px;
   background-color: black;
-  width: 340px;
+  width: 290px;
   height: 350px; }
 
 .who_am_i {
@@ -140,13 +141,16 @@ header button {
   text-align: center; }
 
 .nav_bar {
-  text-align: right; }
+  text-align: left; }
   .nav_bar img {
     float: left; }
 
 .menu {
   margin: 0 30px 0 0;
-  display: none; }
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 50px; }
 
 .menu a {
   text-decoration: none;
@@ -170,7 +174,8 @@ label {
   display: none; }
 
 #toggle:checked + .menu {
-  display: block; }
+  display: block;
+  padding-top: 20px; }
 
 input {
   margin-left: 20%; }
@@ -193,10 +198,12 @@ button img {
   .slide_show div {
     background-color: rgba(0, 0, 0, 0.5); }
   .slide_show #coding {
+    display: inline;
     background-color: #e38f84;
     border-color: #e38f84;
     border-radius: 5px;
     padding: 10px;
+    padding-bottom: 20px;
     color: white; }
     .slide_show #coding a {
       text-decoration: none;
@@ -204,10 +211,12 @@ button img {
   .slide_show #coding:hover {
     padding-right: 50px; }
   .slide_show #about_us {
+    display: inline;
     background-color: black;
     border-color: white;
     border-radius: 5px;
     padding: 10px;
+    padding-bottom: 20px;
     color: white; }
   .slide_show #about_us:hover {
     padding-right: 50px; }
@@ -235,6 +244,20 @@ button img {
     background-image: url("../images/code4ct_homeslider3.jpg");
     background-position: center;
     background-size: cover; } }
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top: 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease; }
+
+/*active and hover background-colour for dot indicators*/
+.active, .dot:hover {
+  background-color: red; }
+
 .who_am_i_images img {
   width: 100%;
   height: 70%; }
@@ -249,6 +272,9 @@ button img {
     text-decoration: none;
     color: black; }
 
+.read_more:hover {
+  padding-right: 50px; }
+
 .service {
   background-color: #e38f84;
   border-color: #e38f84;
@@ -258,6 +284,9 @@ button img {
   .service a {
     text-decoration: none;
     color: black; }
+
+.service:hover {
+  padding-right: 50px; }
 
 .icon_section {
   color: white; }
@@ -274,6 +303,9 @@ footer {
   background-color: #e38f84;
   text-align: center; }
 
+.team img {
+  width: 80%; }
+
 .wrapper {
   overflow: hidden; }
 
@@ -281,7 +313,7 @@ footer {
   background: url("../images/carousalremake.png") repeat-x;
   height: 150px;
   width: 5076px;
-  animation: move 30s linear infinite; }
+  animation: move 100s linear infinite; }
 
 @keyframes move {
   0% {
@@ -329,13 +361,18 @@ footer {
 .sub_footer a:hover {
   color: #e38f84; }
 
-.subscribe input {
-  margin-right: 5%; }
-.subscribe button {
-  background-color: #e38f84;
-  border-color: #e38f84;
-  border-radius: 5px;
-  color: white; }
+.subscribe {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+  .subscribe input {
+    margin-right: 5%; }
+  .subscribe button {
+    background-color: #e38f84;
+    border-color: #e38f84;
+    border-radius: 5px;
+    color: white; }
+  .subscribe button:hover {
+    padding-right: 50px; }
 
 #countUp {
   width: 100%;
@@ -354,7 +391,8 @@ footer {
   background-image: url(../images/portfolio1.JPG);
   background-size: cover;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  text-align: center; }
 
 .portfolio_img2 {
   background-image: url(../images/portfolio2.JPG);
@@ -431,7 +469,10 @@ footer {
   text-align: center;
   top: 0%;
   left: 0;
-  background-color: black; }
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .lightbox img {
   max-width: 50%;
@@ -445,6 +486,12 @@ footer {
 form table tr td {
   display: block; }
 
+td {
+  width: 300px; }
+
+textarea {
+  width: 300px; }
+
 .send {
   background-color: #e38f84;
   border-color: #e38f84;
@@ -452,14 +499,17 @@ form table tr td {
   padding: 10px;
   color: white; }
 
+.send:hover {
+  padding-right: 50px; }
+
 #cart {
   background-color: black;
   color: black; }
 
 .basket {
   text-align: left;
-  position: sticky;
-  bottom: 3%;
+  position: absolute;
+  top: 3%;
   padding-bottom: 2%;
   width: 150px;
   animation-name: scroll;
@@ -469,6 +519,134 @@ form table tr td {
 .course div {
   padding-top: 50px; }
 
+#add1 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#add1:hover {
+  padding-right: 50px; }
+
+#remove1 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#remove1:hover {
+  padding-right: 50px; }
+
+#add2 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#add2:hover {
+  padding-right: 50px; }
+
+#remove2 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#remove2:hover {
+  padding-right: 50px; }
+
+#add3 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#add3:hover {
+  padding-right: 50px; }
+
+#remove3 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#remove3:hover {
+  padding-right: 50px; }
+
+#add4 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#add4:hover {
+  padding-right: 50px; }
+
+#remove4 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#remove4:hover {
+  padding-right: 50px; }
+
+#add5 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#add5:hover {
+  padding-right: 50px; }
+
+#remove5 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#remove5:hover {
+  padding-right: 50px; }
+
+#add6 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#add6:hover {
+  padding-right: 50px; }
+
+#remove6 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white; }
+
+#remove6:hover {
+  padding-right: 50px; }
+
+.contact_us ul li {
+  list-style: none;
+  list-style-type: none; }
+
+@media screen and (min-width: 480px) {
+  .slide_show {
+    width: 470px;
+    height: 350px; } }
 @media screen and (min-width: 768px) {
   header input {
     display: inline; }
@@ -479,7 +657,8 @@ form table tr td {
     display: none; }
 
   .menu {
-    display: inline-flex; }
+    display: inline-flex;
+    top: 10px; }
 
   .slide_show {
     width: 760px;
@@ -509,6 +688,9 @@ form table tr td {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto auto;
     grid-gap: 10px; }
+
+  #countUp {
+    padding-top: 30px; }
 
   .subscribe button {
     margin-right: 23%; } }
@@ -577,6 +759,12 @@ form table tr td {
     padding-bottom: 100px;
     background-color: black;
     color: white; } }
+td {
+  width: 200px; }
+
+textarea {
+  width: 300px; }
+
 @media screen and (min-width: 1200px) {
   .welcome_section {
     display: grid;
@@ -591,7 +779,7 @@ form table tr td {
     grid-gap: 10px; }
 
   .slide_show {
-    width: 1470px;
+    width: 1170px;
     height: 350px; }
 
   .who_am_i {
@@ -648,5 +836,9 @@ form table tr td {
     grid-template-columns: auto auto auto;
     grid-template-rows: auto;
     grid-gap: 10px; } }
+@media screen and (min-width: 1400px) {
+  .slide_show {
+    width: 1390px;
+    height: 350px; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,6 +9,7 @@ html {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
+  padding-bottom: 50px;
 }
 .slide_show {
   display: grid;
@@ -16,7 +17,7 @@ html {
   grid-template-rows: auto;
   grid-gap: 10px;
   background-color: black;
-  width: 340px;
+  width: 290px;
   height: 350px;
 }
 // body section
@@ -161,14 +162,17 @@ header {
 }
 // styling nav
 .nav_bar {
-  text-align: right;
+  text-align: left;
   img {
     float: left;
   }
 }
 .menu {
- margin: 0 30px 0 0;
- display: none;
+   margin: 0 30px 0 0;
+   display: none;
+   position: absolute;
+   background-color: white;
+   top: 50px;
 }
 .menu{
   a {
@@ -196,6 +200,8 @@ label {
  }
  #toggle:checked + .menu {
    display: block;
+   padding-top: 20px;
+
  }
 
 input {
@@ -226,10 +232,12 @@ button{
    }
    // styling my button on slide
    #coding {
+     display: inline;
      background-color: #e38f84;
      border-color: #e38f84;
      border-radius: 5px;
      padding: 10px;
+     padding-bottom: 20px;
      color: white;
      a {
        text-decoration: none;
@@ -240,10 +248,12 @@ button{
      padding-right: 50px;
    }
    #about_us {
+     display: inline;
      background-color: black;
      border-color: white;
      border-radius: 5px;
      padding: 10px;
+     padding-bottom: 20px;
      color: white;
    }
    #about_us:hover {
@@ -270,6 +280,20 @@ button{
   background-position: center;
   background-size: cover;}
 }
+.dot {
+       cursor: pointer;
+       height: 15px;
+       width: 15px;
+       margin-top:4px;
+       background-color: #bbb;
+       border-radius: 50%;
+       display: inline-block;
+       transition: background-color 0.6s ease;
+ }
+/*active and hover background-colour for dot indicators*/
+.active, .dot:hover {
+   background-color: red;
+}
 // who_am_i_images section
 .who_am_i_images {
   img {
@@ -289,6 +313,9 @@ button{
     color: black;
   }
 }
+.read_more:hover {
+  padding-right: 50px;
+}
 // styling our service button
 .service {
   background-color: #e38f84;
@@ -300,6 +327,9 @@ button{
     text-decoration: none;
     color: black;
   }
+}
+.service:hover {
+  padding-right: 50px;
 }
 // styling my icon_section
 .icon_section {
@@ -319,6 +349,12 @@ footer {
   background-color: #e38f84;
   text-align: center;
 }
+// meet the team section
+.team {
+  img {
+    width: 80%;
+  }
+}
 // my icon carousel
 .wrapper {
   overflow: hidden;
@@ -327,7 +363,7 @@ footer {
   background: url("../images/carousalremake.png") repeat-x;
   height: 150px;
   width: 5076px;
-  animation: move 30s linear infinite;
+  animation: move 100s linear infinite;
   // padding-left: 0;
   // padding-right: 0;
 }
@@ -392,6 +428,8 @@ footer {
 }
 // subscribe section
 .subscribe {
+  padding-top: 5px;
+  padding-bottom: 5px;
   input {
     margin-right: 5%;
   }
@@ -400,6 +438,9 @@ footer {
     border-color: #e38f84;
     border-radius: 5px;
     color: white;
+  }
+  button:hover {
+    padding-right: 50px;
   }
 }
 // styling my count up
@@ -424,6 +465,7 @@ footer {
   background-size: cover;
   width: 100%;
   height: 100%;
+  text-align: center;
 }
 .portfolio_img2 {
   background-image: url(../images/portfolio2.JPG);
@@ -502,7 +544,10 @@ footer {
     text-align: center;
     top: 0%;
     left: 0;
-    background-color: rgba(0, 0, 0, 1);
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 5%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
     // Pad the lightbox image
@@ -528,6 +573,12 @@ form {
     }
   }
 }
+td {
+  width: 300px;
+}
+textarea {
+  width: 300px;
+}
 // styling my form send button
 .send {
   background-color: #e38f84;
@@ -535,6 +586,9 @@ form {
   border-radius: 5px;
   padding: 10px;
   color: white;
+}
+.send:hover {
+  padding-right: 50px;
 }
 // styling cart
 #cart {
@@ -544,8 +598,8 @@ form {
 // styling my basket
 .basket {
   text-align: left;
-  position: sticky;
-  bottom: 3%;
+  position: absolute;
+  top: 3%;
   padding-bottom: 2%;
   width: 150px;
   animation-name: scroll;
@@ -555,6 +609,142 @@ form {
 .course {
   div {
     padding-top: 50px;
+  }
+}
+// courses buttons
+#add1 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#add1:hover {
+  padding-right: 50px;
+}
+#remove1 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#remove1:hover {
+  padding-right: 50px;
+}
+#add2 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#add2:hover {
+  padding-right: 50px;
+}
+#remove2 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#remove2:hover {
+  padding-right: 50px;
+}
+#add3 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#add3:hover {
+  padding-right: 50px;
+}
+#remove3 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#remove3:hover {
+  padding-right: 50px;
+}
+#add4 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#add4:hover {
+  padding-right: 50px;
+}
+#remove4 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#remove4:hover {
+  padding-right: 50px;
+}
+#add5 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#add5:hover {
+  padding-right: 50px;
+}
+#remove5 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#remove5:hover {
+  padding-right: 50px;
+}
+#add6 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#add6:hover {
+  padding-right: 50px;
+}
+#remove6 {
+  background-color: #e38f84;
+  border-color: #e38f84;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+}
+#remove6:hover {
+  padding-right: 50px;
+}
+// contact us in sub footer section
+.contact_us {
+  ul {
+    li {
+      list-style: none;
+      list-style-type: none;
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .slide_show {
+    width: 470px;
+    height: 350px;
   }
 }
 
@@ -572,6 +762,7 @@ form {
   }
   .menu {
     display: inline-flex;
+    top: 10px;
   }
   .slide_show {
     width: 760px;
@@ -603,6 +794,9 @@ form {
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto auto auto;
     grid-gap: 10px;
+  }
+  #countUp {
+    padding-top: 30px;
   }
   .subscribe {
     button {
@@ -688,7 +882,12 @@ form {
     color: white;
   }
 }
-
+td {
+  width: 200px;
+}
+textarea {
+  width: 300px;
+}
 // styling large desktop
 @media screen and (min-width: 1200px) {
   .welcome_section {
@@ -704,7 +903,7 @@ form {
     grid-gap: 10px;
   }
   .slide_show {
-    width: 1470px;
+    width: 1170px;
     height: 350px;
   }
   .who_am_i {
@@ -767,4 +966,11 @@ form {
     grid-template-rows: auto;
     grid-gap: 10px;
   }
+}
+@media screen and (min-width: 1400px) {
+  .slide_show {
+    width: 1390px;
+    height: 350px;
+  }
+
 }
