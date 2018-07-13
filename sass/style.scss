@@ -143,7 +143,6 @@ header {
   img {
     width: 100px;
     height: 50px;
-    margin-left: 40%;
   }
   input {
     height: 5%;
@@ -764,6 +763,11 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
+  .nav_bar {
+    input {
+       margin-left: 0%;
+    }
+  }
   header {
     input {
       display: inline;
@@ -782,6 +786,9 @@ textarea {
   .slide_show {
     width: 760px;
     height: 350px;
+  }
+  .nav_bar {
+    width: 100px
   }
   // images for who am i
   .who_am_i_images {
@@ -825,6 +832,11 @@ textarea {
 }
 // styling my desktop
 @media screen and (min-width: 1024px) {
+  .nav_bar {
+    input {
+       margin-left: 20%;
+    }
+  }
   .slide_show {
     width: 1024px;
     height: 350px;
@@ -913,6 +925,9 @@ textarea {
 }
 // styling large desktop
 @media screen and (min-width: 1200px) {
+  .nav_bar {
+    width: 100%
+  }
   .welcome_section {
     display: grid;
     grid-template-columns: auto auto;

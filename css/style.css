@@ -126,8 +126,7 @@ footer {
 
 header img {
   width: 100px;
-  height: 50px;
-  margin-left: 40%; }
+  height: 50px; }
 header input {
   height: 5%;
   display: none;
@@ -659,6 +658,9 @@ textarea {
   .basket {
     padding-top: 102%; } }
 @media screen and (min-width: 768px) {
+  .nav_bar input {
+    margin-left: 0%; }
+
   header input {
     display: inline; }
   header button {
@@ -674,6 +676,9 @@ textarea {
   .slide_show {
     width: 760px;
     height: 350px; }
+
+  .nav_bar {
+    width: 100px; }
 
   .who_am_i_images {
     display: grid;
@@ -709,6 +714,9 @@ textarea {
   .basket {
     padding-top: 57%; } }
 @media screen and (min-width: 1024px) {
+  .nav_bar input {
+    margin-left: 20%; }
+
   .slide_show {
     width: 1024px;
     height: 350px; }
@@ -783,6 +791,9 @@ textarea {
   padding-top: 42%; }
 
 @media screen and (min-width: 1200px) {
+  .nav_bar {
+    width: 100%; }
+
   .welcome_section {
     display: grid;
     grid-template-columns: auto auto;
