@@ -360,7 +360,7 @@ footer {
   overflow: hidden;
 }
 .sliding-background {
-  background: url("../images/carousalremake.png") repeat-x;
+  background: url("../images/carousalremake.jpg") repeat-x;
   height: 150px;
   width: 5076px;
   animation: move 100s linear infinite;
@@ -601,7 +601,8 @@ textarea {
   position: absolute;
   top: 3%;
   padding-bottom: 2%;
-  width: 150px;
+  width: 100px;
+  padding-top: 136%;
   animation-name: scroll;
   animation-iteration-count: infinite;
   animation-duration: 2s;
@@ -732,6 +733,16 @@ textarea {
 #remove6:hover {
   padding-right: 50px;
 }
+// styling cart
+#cart {
+  h2 {
+    font-size: 15px;
+  }
+  width: 100px;
+  img {
+    margin-left: 25%;
+  }
+}
 // contact us in sub footer section
 .contact_us {
   ul {
@@ -741,10 +752,14 @@ textarea {
     }
   }
 }
+
 @media screen and (min-width: 480px) {
   .slide_show {
     width: 470px;
     height: 350px;
+  }
+  .basket {
+    padding-top: 102%;
   }
 }
 
@@ -802,6 +817,10 @@ textarea {
     button {
       margin-right: 23%;
     }
+  }
+  // basket
+  .basket {
+    padding-top: 57%;
   }
 }
 // styling my desktop
@@ -888,6 +907,10 @@ td {
 textarea {
   width: 300px;
 }
+// basket
+.basket {
+  padding-top: 42%;
+}
 // styling large desktop
 @media screen and (min-width: 1200px) {
   .welcome_section {
@@ -966,11 +989,19 @@ textarea {
     grid-template-rows: auto;
     grid-gap: 10px;
   }
+  // basket
+  .basket {
+    padding-top: 36%;
+  }
 }
 @media screen and (min-width: 1400px) {
   .slide_show {
     width: 1390px;
     height: 350px;
+  }
+  // basket
+  .basket {
+    padding-top: 30%;
   }
 
 }
