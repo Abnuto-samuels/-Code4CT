@@ -13,7 +13,7 @@ html {
   grid-template-rows: auto;
   grid-gap: 10px;
   background-color: black;
-  width: 305px;
+  width: 100%;
   height: 350px; }
 
 .who_am_i {
@@ -652,7 +652,7 @@ textarea {
 
 @media screen and (min-width: 480px) {
   .slide_show {
-    width: 470px;
+    width: 100%;
     height: 350px; }
 
   .basket {
@@ -674,7 +674,7 @@ textarea {
     top: 10px; }
 
   .slide_show {
-    width: 760px;
+    width: 100%;
     height: 350px; }
 
   .nav_bar {
@@ -718,7 +718,7 @@ textarea {
     margin-left: 20%; }
 
   .slide_show {
-    width: 1024px;
+    width: 100%;
     height: 350px; }
 
   .sub_footer {
@@ -807,7 +807,7 @@ textarea {
     grid-gap: 10px; }
 
   .slide_show {
-    width: 1170px;
+    width: 100%;
     height: 350px; }
 
   .who_am_i {
@@ -869,7 +869,7 @@ textarea {
     padding-top: 36%; } }
 @media screen and (min-width: 1400px) {
   .slide_show {
-    width: 1390px;
+    width: 100%;
     height: 350px; }
 
   .basket {
